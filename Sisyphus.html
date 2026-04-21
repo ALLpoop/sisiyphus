@@ -136,6 +136,17 @@
             text-transform: uppercase;
         }
 
+        .Meaningless-btn {
+              background-color: var(--blue-primary);
+            color: white;
+            border: none;
+            padding: 10px 11px;
+            font-weight: bold;
+            border-radius: 100px;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+
         /* 结算弹窗 */
         #status-overlay {
             display: none;
@@ -172,15 +183,16 @@
 
     <div class="footer">
         <div class="icons">
-            <span onclick="initGame()">🔄</span>
+            <span onclick="initGame()">🔄</span> 
             <span onclick="toggleMusic()" id="music-icon" style="cursor: pointer; opacity: 0.5;">🎧</span>
             <span>ⓘ</span>
         </div>
+        <button class="Meaningless-btn" onclick="Meaningless()">也許这是无意义的</button>
         <button class="verify-btn" onclick="verify()">验证</button>
     </div>
 </div>
 
-<div id="status-overlay">
+<div id="status-overlay"> 
     <h2 id="result-title">验证失败</h2>
     <p id="result-desc"></p>
     <button onclick="closeOverlay()" style="padding: 10px 20px; margin-top: 20px;">再次尝试</button>
@@ -334,7 +346,7 @@ function rollbackAnimate() {
     }
 }
 
-function verify() {
+function S() {
     if (rollbackTimer) cancelAnimationFrame(rollbackTimer);
     if (sliderValue > 95 && !isDragging) {
         window.location.href = "https://www.bilibili.com/video/BV1GJ411x7h7";
