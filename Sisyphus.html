@@ -188,7 +188,7 @@
             <span>ⓘ</span>
         </div>
         <button class="Meaningless-btn" onclick="Meaningless()">也許这是无意义的</button>
-        <button class="verify-btn" onclick="verify()">验证</button>
+        <button class="verify-btn" onclick="S()">验证</button>
     </div>
 </div>
 
@@ -355,6 +355,11 @@ function S() {
         showResult("检测到非西西弗斯行为", "日复一日，永无止境。石头甚至没有推到山顶，或者它滚回去了。你甚至不是一个合格的西西弗斯，更别说是神话中的神人了。");
     }
 }
+
+function Meaningless() {
+    window.location.href ="AllpoopBlog.html";
+}
+    
 
 function showResult(title, desc) {
     document.getElementById('result-title').innerText = title;
